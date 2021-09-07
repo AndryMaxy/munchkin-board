@@ -1,0 +1,36 @@
+html {
+    background-image: url("./background.png"); 
+    background-size: cover;
+    font-size: 4em;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    
+    border: black 5px solid;
+}
+
+td, th {
+    padding: 0.2em;
+}
+
+td {
+    color: white;
+    -webkit-text-stroke: 3px black;
+}
+
+tr {
+    border: rgb(0, 0, 0) 5px solid;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
