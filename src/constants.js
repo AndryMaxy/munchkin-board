@@ -1,3 +1,1 @@
-import ip from 'ip';
-
-export const host = `http://${ip.address()}:9090`;
+export const host = `http://localhost:9090`;
