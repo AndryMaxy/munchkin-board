@@ -28,3 +28,4 @@ class Hub {
 }
 
 export default new Hub();
+//Просто сохранил для себя походу.
