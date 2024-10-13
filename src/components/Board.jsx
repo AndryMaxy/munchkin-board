@@ -9,9 +9,12 @@ const Board = () => {
     const players = useSelector((state) => state.main.players);
     const dispatch = useDispatch();
 
-    useEffect(async () => {
-        const newPlayers = await Api.getAll();
-        dispatch(setPlayers(newPlayers));
+    useEffect(() => {
+        const getAllPlayers = async () => {
+            const newPlayers = await Api.getAll();
+            dispatch(setPlayers(newPlayers));
+        }
+        getAllPlayers();
     }, []);
 
     return players.length ? (

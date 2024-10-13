@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { host } from '../constants';
+import { serverHost } from '../constants';
 
 const ax = axios.create({
-    baseURL: host,
+    baseURL: serverHost,
 });
 
 export default ax;

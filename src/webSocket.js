@@ -3,10 +3,10 @@ import { Stomp } from '@stomp/stompjs';
 import { setPlayers, mergePlayers, addPlayer } from './redux/mainSlice';
 import store from './redux/store';
 import Api from './web/api';
-import { host } from './constants';
+import { serverHost } from './constants';
 
 export const connect = (successReconnectCallback) => {
-    const socket = new SockJS(`${host}/munchkin`);
+    const socket = new SockJS(`${serverHost}/munchkin`);
     const stompClient = Stomp.over(socket);
     stompClient.connect(
         { credentials: false },
